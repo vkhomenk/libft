@@ -6,7 +6,7 @@
 #    By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/04 20:13:29 by vkhomenk          #+#    #+#              #
-#    Updated: 2019/07/11 07:13:49 by vkhomenk         ###   ########.fr        #
+#    Updated: 2019/07/11 15:23:13 by vkhomenk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,11 +21,11 @@ SRC			= ft_putnbr_fd.c ft_strmapi.c ft_putstr.c ft_isupper.c ft_islower.c\
 			ft_memmove.c ft_strequ.c ft_strsub.c ft_memset.c ft_striter.c \
 			ft_strtrim.c ft_itoa.c ft_putchar.c ft_striteri.c ft_putchar_fd.c \
 			ft_strjoin.c ft_tolower.c ft_putendl.c ft_strlcat.c ft_strchri.c \
-			ft_toupper.c ft_putendl_fd.c ft_strlen.c ft_putnbr.c \
-			ft_strmap.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c \
-			ft_lstiter.c ft_lstmap.c ft_intiter.c ft_power.c ft_atoi_base.c \
-			ft_itoa_base.c ft_nbrlen.c ft_nbrlen_base.c ft_matrixalloc.c \
-			ft_matrixdel.c ft_swap.c
+			ft_toupper.c ft_putendl_fd.c ft_strlen.c ft_putnbr.c ft_strmap.c \
+			ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c \
+			ft_lstmap.c ft_intiter.c ft_power.c ft_atoi_base.c ft_itoa_base.c \
+			ft_nbrlen.c ft_nbrlen_base.c ft_matrixalloc.c ft_matrixdel.c \
+			ft_swap.c get_next_line.c
 OBJ			= $(SRC:.c=.o)
 INC_DIR		= includes/
 CC			= clang

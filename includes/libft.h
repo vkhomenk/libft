@@ -6,7 +6,7 @@
 /*   By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 22:26:38 by vkhomenk          #+#    #+#             */
-/*   Updated: 2019/04/08 23:51:48 by vkhomenk         ###   ########.fr       */
+/*   Updated: 2019/07/11 15:26:53 by vkhomenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "get_next_line.h"
 
 int					ft_atoi(const char *nptr);
 void				ft_bzero(void *s, size_t n);
