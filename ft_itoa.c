@@ -6,7 +6,7 @@
 /*   By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 17:10:22 by vkhomenk          #+#    #+#             */
-/*   Updated: 2018/11/27 17:39:53 by vkhomenk         ###   ########.fr       */
+/*   Updated: 2019/03/28 16:32:16 by vkhomenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char		*ft_itoa(int n)
 	int				len;
 	char			*str;
 
-	len = ft_nbrlen(n);
+	len = ft_nbrlen(n, 1);
 	if (!(str = ft_strnew(len)))
 		return (NULL);
 	if (n == -2147483648)

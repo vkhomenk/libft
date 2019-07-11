@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
+/*   ft_strchri.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/24 17:00:42 by vkhomenk          #+#    #+#             */
-/*   Updated: 2019/03/28 16:24:58 by vkhomenk         ###   ########.fr       */
+/*   Created: 2019/03/26 23:29:41 by vkhomenk          #+#    #+#             */
+/*   Updated: 2019/07/10 17:29:54 by vkhomenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
-size_t	ft_nbrlen(long long int nbr, int sign)
+int		ft_strchri(const char *s, int c)
 {
-	return (ft_nbrlen_base(nbr, 10, sign));
+	char	*tmp;
+
+	tmp = ft_strchr(s, c);
+	return (tmp ? tmp - s : -1);
 }

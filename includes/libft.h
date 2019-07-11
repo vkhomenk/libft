@@ -6,7 +6,7 @@
 /*   By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 22:26:38 by vkhomenk          #+#    #+#             */
-/*   Updated: 2019/02/01 04:35:55 by vkhomenk         ###   ########.fr       */
+/*   Updated: 2019/04/08 23:51:48 by vkhomenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
 char				*ft_strcat(char *dest, char const *src);
 char				*ft_strchr(const char *s, int c);
+int					ft_strchri(const char *s, int c);
 void				ft_strclr(char *s);
 int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strcpy(char *dest, const char *src);
@@ -91,8 +92,8 @@ void				ft_intiter(int *tab, unsigned int length, void (*f)(int *));
 int					ft_power(int nb, int power);
 int					ft_atoi_base(const char *nptr, int base);
 char				*ft_itoa_base(int n, int base);
-size_t				ft_nbrlen(long nbr);
-size_t				ft_nbrlen_base(long nbr, size_t base);
+size_t				ft_nbrlen(long long int nbr, int sign);
+size_t				ft_nbrlen_base(long long int nbr, size_t base, int sign);
 void				**ft_matrixalloc(unsigned int row,
 					unsigned int col, size_t size);
 void				ft_matrixdel(void ***matr, unsigned int row);

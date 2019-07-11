@@ -6,7 +6,7 @@
 #    By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/04 20:13:29 by vkhomenk          #+#    #+#              #
-#    Updated: 2019/02/16 04:16:37 by vkhomenk         ###   ########.fr        #
+#    Updated: 2019/07/11 07:13:49 by vkhomenk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC			= ft_putnbr_fd.c ft_strmapi.c ft_putstr.c ft_isupper.c ft_islower.c\
 			ft_isdigit.c ft_memdel.c ft_strdup.c ft_strstr.c ft_isprint.c \
 			ft_memmove.c ft_strequ.c ft_strsub.c ft_memset.c ft_striter.c \
 			ft_strtrim.c ft_itoa.c ft_putchar.c ft_striteri.c ft_putchar_fd.c \
-			ft_strjoin.c ft_tolower.c ft_putendl.c ft_strlcat.c \
+			ft_strjoin.c ft_tolower.c ft_putendl.c ft_strlcat.c ft_strchri.c \
 			ft_toupper.c ft_putendl_fd.c ft_strlen.c ft_putnbr.c \
 			ft_strmap.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c \
 			ft_lstiter.c ft_lstmap.c ft_intiter.c ft_power.c ft_atoi_base.c \
@@ -34,17 +34,20 @@ CC_FLAGS	= -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
-	ranlib $(NAME)
+	@ar rcs $(NAME) $(OBJ)
+	@ranlib $(NAME)
+	@echo libft.a created
 
 %.o: %.c
-	$(CC) $(CC_FLAGS) -o $@ -c $< -I $(INC_DIR)
+	@$(CC) $(CC_FLAGS) -o $@ -c $< -I $(INC_DIR)
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
+	@echo object files of libft removed
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
+	@echo libft.a removed
 
 re: fclean all
 

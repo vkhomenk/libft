@@ -6,7 +6,7 @@
 /*   By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/27 15:49:42 by vkhomenk          #+#    #+#             */
-/*   Updated: 2018/11/27 22:38:35 by vkhomenk         ###   ########.fr       */
+/*   Updated: 2019/03/28 19:46:06 by vkhomenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static char	*help(long *num, int base, int *i, int *count)
 		(*num) *= -1;
 	}
 	tmp = *num;
-	*count = (ft_nbrlen_base(tmp, base) + *i);
+	*count = (ft_nbrlen_base(tmp, base, 1) + *i);
 	if (!(new = ft_strnew(*count)))
 		return (NULL);
 	return (new);
